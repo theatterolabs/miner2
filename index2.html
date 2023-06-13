@@ -1,0 +1,18 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      function get() {
+  
+  var content = document.getElementById('iframe').contentWindow.document.body.innerHTML;
+  
+  console.log(content);
+
+}
+    </script>
+    <iframe id="iframe" src="https://www.moviemania.io/desktop/tv/1396-breaking-bad"></iframe>
+
+<button id="btn" onclick="get()">get contents</button>
+    
+  </body>
+</html>
